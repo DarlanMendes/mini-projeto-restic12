@@ -1,4 +1,11 @@
-const { defineConfig } = require('@vue/cli-service')
-module.exports = defineConfig({
-  transpileDependencies: true
-})
+module.exports = {
+  devServer: {
+    proxy: {
+      '^/baseApi':{
+        target: 'https://api.themoviedb.org/3',
+        changeOrigin:true, 
+        pathRewrite:{'^/baseApi':''}
+      }
+    }
+  }
+}
