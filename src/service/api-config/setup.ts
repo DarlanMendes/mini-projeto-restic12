@@ -15,7 +15,6 @@ function initAxios(config: AxiosRequestConfig, token?: any): AxiosInstance {
   defineInstance.interceptors.request.use(
     
     (request:any) => {
-      console.log(request)
       request.headers!.Authorization = token??`Bearer ${process.env.VUE_APP_TOKEN}`
       return request;
     },
