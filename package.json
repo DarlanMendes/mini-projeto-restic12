@@ -11,6 +11,7 @@
     "@types/axios": "^0.14.0",
     "axios": "^1.7.2",
     "core-js": "^3.8.3",
+    "primevue": "^3.52.0",
     "rxjs": "^7.8.1",
     "vue": "^3.2.13",
     "vue-class-component": "^8.0.0-0",
